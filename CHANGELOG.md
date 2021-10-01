@@ -1,3 +1,13 @@
+## 1.0.0 (2021-10-01)
+
+### Features
+
+- generate release token ([7377e66](https://github.com/vidavidorra/app-test/commit/7377e669e89d14e2b1dfd1cc51f0dacf4b0dde4e))
+
+### Bug Fixes
+
+- update `repository.url` in package.json ([722a867](https://github.com/vidavidorra/app-test/commit/722a867dea82e9bc39393a44b3a5839ce0a5b80c))
+
 ### [1.1.109](https://github.com/vidavidorra/repo-template/compare/v1.1.108...v1.1.109) (2021-10-01)
 
 ### Bug Fixes
