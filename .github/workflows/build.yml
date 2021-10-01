@@ -49,6 +49,6 @@ jobs:
           private_key: ${{ secrets.PRIVATE_KEY }}
       - name: Release
         env:
-          # GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
+          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx --no-install semantic-release
