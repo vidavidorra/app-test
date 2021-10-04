@@ -22,11 +22,11 @@ jobs:
       - name: Cache Node modules
         uses: actions/cache@v2.1.6
         with:
-          path: ~/.npm
+          path: '**/node_modules'
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: ${{ runner.os }}-node-
       - name: Install project
-        run: npm ci --ignore-scripts --prefer-offline
+        if: steps.npm-cache.outputs.cache-hit != 'true'
+        run: npm ci --ignore-scripts
       - name: Lint commit messages
         uses: wagoid/commitlint-github-action@8d669e311fc7502dc60f825648fd08839988454e # renovate: tag=v4.1.5
         env:
