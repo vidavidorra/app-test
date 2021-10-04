@@ -1,3 +1,9 @@
+### [1.1.7](https://github.com/vidavidorra/app-test/compare/v1.1.6...v1.1.7) (2021-10-04)
+
+### Continuous Integration
+
+- cache npm package but always install in commitlint ([f8952f5](https://github.com/vidavidorra/app-test/commit/f8952f558057d92536f79da17e4ab930fdd3867c))
+
 ### [1.1.6](https://github.com/vidavidorra/app-test/compare/v1.1.5...v1.1.6) (2021-10-04)
 
 ### Continuous Integration
