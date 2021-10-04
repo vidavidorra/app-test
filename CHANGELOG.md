@@ -1,3 +1,10 @@
+### [1.1.6](https://github.com/vidavidorra/app-test/compare/v1.1.5...v1.1.6) (2021-10-04)
+
+### Continuous Integration
+
+- cache npm install ([e70820d](https://github.com/vidavidorra/app-test/commit/e70820d7c8f23d989dbd6b96a37359d638ba2137))
+- cache npm package but always install ([93389d1](https://github.com/vidavidorra/app-test/commit/93389d12ba1ffbb6fa2e3a6379d3bc6767c77e17))
+
 ### [1.1.5](https://github.com/vidavidorra/app-test/compare/v1.1.4...v1.1.5) (2021-10-04)
 
 ### Build System
