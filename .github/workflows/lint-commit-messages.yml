@@ -20,15 +20,12 @@ jobs:
         with:
           node-version: 14
       - name: Cache Node modules
-        id: cache
         uses: actions/cache@v2.1.6
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          restore-keys: ${{ runner.os }}-node-
       - name: Install project
-        if: !steps.cache.outputs.cache-hit
         run: npm ci --ignore-scripts --prefer-offline
       - name: Lint commit messages
         uses: wagoid/commitlint-github-action@8d669e311fc7502dc60f825648fd08839988454e # renovate: tag=v4.1.5
