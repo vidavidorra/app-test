@@ -1,3 +1,9 @@
+### [1.1.9](https://github.com/vidavidorra/app-test/compare/v1.1.8...v1.1.9) (2021-10-04)
+
+### Continuous Integration
+
+- skip install if cache is restored ([81b77eb](https://github.com/vidavidorra/app-test/commit/81b77ebf6f9d57eaf53926ac03ed96d0169edd1e))
+
 ### [1.1.8](https://github.com/vidavidorra/app-test/compare/v1.1.7...v1.1.8) (2021-10-04)
 
 ### Continuous Integration
