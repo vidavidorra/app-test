@@ -1,3 +1,9 @@
+### [1.1.4](https://github.com/vidavidorra/app-test/compare/v1.1.3...v1.1.4) (2021-10-04)
+
+### Build System
+
+- release test 5 ([ef7ff68](https://github.com/vidavidorra/app-test/commit/ef7ff68f32c1f63f30ab278c1e185edbe4eb1d47)), closes [#2](https://github.com/vidavidorra/app-test/issues/2)
+
 ### [1.1.3](https://github.com/vidavidorra/app-test/compare/v1.1.2...v1.1.3) (2021-10-04)
 
 ### Build System
