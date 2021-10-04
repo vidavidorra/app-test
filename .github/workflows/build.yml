@@ -17,8 +17,17 @@ jobs:
         uses: actions/setup-node@270253e841af726300e85d718a5f606959b2903c # renovate: tag=v2.4.1
         with:
           node-version: 14
+      - name: Cache Node modules
+        id: cache
+        uses: actions/cache@v2.1.6
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
       - name: Install project
-        run: npm ci --ignore-scripts
+        if: !steps.cache.outputs.cache-hit
+        run: npm ci --ignore-scripts --prefer-offline
       - name: Lint
         run: npm run lint
   release:
@@ -39,8 +48,17 @@ jobs:
         uses: actions/setup-node@270253e841af726300e85d718a5f606959b2903c # renovate: tag=v2.4.1
         with:
           node-version: 14
+      - name: Cache Node modules
+        id: cache
+        uses: actions/cache@v2.1.6
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
       - name: Install project
-        run: npm ci --ignore-scripts
+        if: !steps.cache.outputs.cache-hit
+        run: npm ci --ignore-scripts --prefer-offline
       - name: Generate token
         id: generate_token
         uses: tibdex/github-app-token@v1
@@ -50,5 +68,4 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
-          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx --no-install semantic-release
