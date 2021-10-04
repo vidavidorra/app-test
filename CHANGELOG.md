@@ -1,3 +1,9 @@
+### [1.1.8](https://github.com/vidavidorra/app-test/compare/v1.1.7...v1.1.8) (2021-10-04)
+
+### Continuous Integration
+
+- cache `node_modules` completely ([53fa955](https://github.com/vidavidorra/app-test/commit/53fa955a3bb83c8bbc0cd41c948f1aa002350bb1))
+
 ### [1.1.7](https://github.com/vidavidorra/app-test/compare/v1.1.6...v1.1.7) (2021-10-04)
 
 ### Continuous Integration
