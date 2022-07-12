@@ -57,10 +57,10 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Generate token
         id: generate_token
-        uses: tibdex/github-app-token@v1
+        uses: vidavidorra/github-action-app-token@1b1e482ebafdf50b9df0e7a5920fb0e45b0bf1ba
         with:
-          app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.PRIVATE_KEY }}
+          appId: ${{ secrets.APP_ID }}
+          privateKey: ${{ secrets.PRIVATE_KEY }}
       - name: Release
         env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
