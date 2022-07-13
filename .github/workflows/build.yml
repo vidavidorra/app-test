@@ -57,7 +57,7 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Generate token
         id: generate_token
-        uses: vidavidorra/github-action-app-token@1b1e482ebafdf50b9df0e7a5920fb0e45b0bf1ba
+        uses: vidavidorra/github-action-app-token@main
         with:
           appId: ${{ secrets.APP_ID }}
           privateKey: ${{ secrets.PRIVATE_KEY }}
