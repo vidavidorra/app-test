@@ -1,3 +1,10 @@
+### [1.1.11](https://github.com/vidavidorra/app-test/compare/v1.1.10...v1.1.11) (2022-07-14)
+
+### Bug Fixes
+
+- use main ([9fac8ea](https://github.com/vidavidorra/app-test/commit/9fac8ea31b8365b1f7d1ef64e9c7bd84ea1cafcc))
+- use token ([cb9c94f](https://github.com/vidavidorra/app-test/commit/cb9c94f57072bb710a63d93942ef94bf89caf974))
+
 ### [1.1.10](https://github.com/vidavidorra/app-test/compare/v1.1.9...v1.1.10) (2021-10-04)
 
 ### Build System
