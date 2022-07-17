@@ -1,3 +1,9 @@
+### [1.1.13](https://github.com/vidavidorra/app-test/compare/v1.1.12...v1.1.13) (2022-07-17)
+
+### Bug Fixes
+
+- empty Sun Jul 17 16:17:22 CEST 2022 ([7dbf400](https://github.com/vidavidorra/app-test/commit/7dbf400fbe6593b057dc71556995a68dcdc201be))
+
 ### [1.1.12](https://github.com/vidavidorra/app-test/compare/v1.1.11...v1.1.12) (2022-07-17)
 
 ### Bug Fixes
